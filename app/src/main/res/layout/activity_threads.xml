@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThreadsActivity">
+
+    <TextView
+        android:id="@+id/userNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/logOutButton"
+        android:layout_toStartOf="@+id/logOutButton"
+        android:textStyle="bold"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:contentDescription="@string/LogOut"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <TextView
+        android:id="@+id/currentThreadsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/userNameTV"
+        android:layout_alignLeft="@+id/userNameTV"
+        android:layout_below="@+id/logOutButton"
+        android:text="@string/CurrentThreads" />
+
+    <ListView
+        android:id="@+id/threadsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/userNameTV"
+        android:layout_alignLeft="@+id/userNameTV"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp"
+        android:layout_below="@+id/currentThreadsTV" />
+
+    <EditText
+        android:id="@+id/addThreadET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/userNameTV"
+        android:layout_alignLeft="@+id/userNameTV"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/addThread"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/addThreadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval_shape"
+        android:layout_alignEnd="@+id/logOutButton"
+        android:layout_alignRight="@+id/logOutButton"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/addThread"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</RelativeLayout>

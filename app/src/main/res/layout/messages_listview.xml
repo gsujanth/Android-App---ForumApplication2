@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/messagelistview_shape">
+
+    <TextView
+        android:id="@+id/messageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/deleteMessageButton"
+        android:layout_toStartOf="@+id/deleteMessageButton"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/deleteMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:contentDescription="@string/deleteMessage"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <TextView
+        android:id="@+id/messageSenderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/messageTV"
+        android:layout_alignLeft="@+id/messageTV"
+        android:layout_marginTop="64dp"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/messageTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/deleteMessageButton"
+        android:layout_alignRight="@+id/deleteMessageButton"
+        android:layout_alignTop="@+id/messageSenderTV"
+        android:textStyle="bold"
+        android:text="" />
+</RelativeLayout>

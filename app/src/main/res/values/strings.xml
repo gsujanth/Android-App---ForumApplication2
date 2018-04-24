@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InClass12</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="fName">First Name</string>
+    <string name="lName">Last Name</string>
+    <string name="cPassword">Choose Password</string>
+    <string name="rPassword">Repeat Password</string>
+    <string name="Cancel">Cancel</string>
+    <string name="CurrentThreads">Current Threads</string>
+    <string name="LogOut">Log Out</string>
+    <string name="addThread">Add New Thread</string>
+    <string name="deleteThread">Delete Thread</string>
+    <string name="goToThreads">Go To Threads</string>
+    <string name="sendMessage">Type message to send</string>
+    <string name="deleteMessage">Delete Message</string>
+</resources>
